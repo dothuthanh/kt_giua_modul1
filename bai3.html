@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = newDate;
+    let year = a.getFullYear();
+    function old(number) {
+        if (number > year){
+            alert("k hop le");
+        }else if (number = year){
+            alert("ban duoc mot tuoi");
+        }else {
+            alert("so tuoi cua ban la" + (year - number));
+        }
+    }
+    let newYear = parseInt(prompt("ban sinh nam bao nhieu?"));
+    if (isNaN(newYear) == true){
+        alert("khong hop li");
+    }else {
+        old(newYear);
+    }
+</script>
+</body>
+</html>
