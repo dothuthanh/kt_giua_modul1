@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Entenr a number</p>
+<input type="number" id="number">
+<button type="button" onclick="show()">show</button>
+<script>
+    let number = parseInt(document.getElementById("number").value);
+    let numberRange = "";
+    function isPrime(n) {
+        if (n <=1){
+            return false;
+        }else {
+            for (i = 2; i < Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    function show(number) {
+        for(let i = 2; i < number; i++){
+            if (isPeime(i)) {
+                numberRange +=i + ',';
+
+            }
+        }
+        document.write(numberRange);
+    }
+</script>
+</body>
+</html>
